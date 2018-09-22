@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#292929</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#1fc25b</color>
+    <drawable name="red_color">#6b6b6b</drawable>
+    <drawable name="blue_color">#ae373b</drawable>
+    <drawable name="wcisniete">#8e2d32</drawable>
+    <drawable name="wcisniete2">#2d8e2f</drawable>
+    <drawable name="niewcisniete">#505050</drawable>
+    <drawable name="zaznaczone">#c8ed0f</drawable>
+    <drawable name="przycisnij">#4e4e4e</drawable>
+    <color name="white">#ffffff</color>
+    <color name="colorTransparentWhite">#7affffff</color>
+</resources>

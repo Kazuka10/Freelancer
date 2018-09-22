@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mkorpal.myapplication.ekranglowny">
+
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#4d4d4d"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginTop="50px"
+                    android:text="Nazwa Firmy 0001"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:src="@drawable/warehousegreen" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#646464"
+
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#4c4c4c"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/middleSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back2"
+
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/usuwaniebaz"
+                    android:nestedScrollingEnabled="false"
+                    android:text="(1) Usuwanie Baz"
+                    android:onClick="WydanieStart"
+                    android:textColor="#ffffff" />
+
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/klawiaturaekranowa"
+                    android:nestedScrollingEnabled="false"
+                    android:text="(2) Klawiatura ekranowa"
+                    android:onClick="WydanieStart"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/webtransfer2"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="WydanieStart"
+                    android:text="(3) Webtransfer"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/slowniki"
+                    android:nestedScrollingEnabled="false"
+                    android:text="(4) Słowniki"
+                    android:onClick="WydanieStart"
+                    android:textColor="#ffffff" />
+
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/przyjecie2"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="WydanieStart"
+                    android:text="(5) Stan ekspozycji"
+                    android:textColor="#ffffff" />
+
+
+
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgprzycisk"
+                    android:contextClickable="true"
+                    android:drawableLeft="@drawable/inwentaryzacja2"
+
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="WydanieStart"
+                    android:text="(6) Wymiana etykiet"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+        </ScrollView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="#d6d7d7"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#585858"
+                android:src="@drawable/akceptuj2" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#585858"
+                android:src="@drawable/zamknij" />
+        </LinearLayout></RelativeLayout>
+    </LinearLayout></LinearLayout>

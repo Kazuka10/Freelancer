@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:weightSum="1"
+        android:layout_weight="0.91">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wypozyczenie"
+                android:id="@+id/wypozyczenie1"
+                android:background="#505050"
+                android:textColor="#ffffff"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rejestracja_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/rejestracja"
+            android:text="Rejestracja"
+            android:drawableTint="#585858"
+            android:onClick="Rejestracja05"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/podglad_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/podglad"
+            android:text="Podglad"
+            android:contextClickable="false"
+            android:drawableTint="#585858"
+            android:onClick="Podglad05"/>
+
+        <Button
+        android:id="@+id/eksport_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/eksport"
+        android:text="Eksport"
+            android:onClick="Eksportuj05"
+            android:drawableTint="#585858"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aktualny czas"
+        android:id="@+id/textView25"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dateview"
+        android:background="@drawable/back"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ostatnia synchronizacja"
+        android:id="@+id/current_time_view"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="22/10/2016 8:36"
+        android:id="@+id/synchronizedate"
+        android:background="@drawable/back"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#1b1b1b"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6d7d7">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton21"
+            android:src="@drawable/akceptuj2"
+            android:background="#585858"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton22"
+            android:src="@drawable/zamknij"
+            android:background="#585858"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="#646464" />
+</LinearLayout>

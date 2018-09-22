@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mkorpal.myapplication.przyjecie.EditDataActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edycja"
+                        android:id="@+id/textEdycja"
+                        android:background="#505050"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Kod"
+                        android:id="@+id/naglowek"
+                        android:textColor="#999999" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editabable_item"
+                        android:focusable="true"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="start"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/domyslnie5"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#55da79"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Pracownik"
+                        android:id="@+id/textView33"
+                        android:textColor="#999999" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown"
+                        android:paddingTop="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.45" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#55da79"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Nazwa"
+                        android:id="@+id/textView29"
+                        android:textColor="#999999" />
+
+                    <EditText
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/user_Input_edycja"
+                        android:layout_weight="1"
+                        android:backgroundTint="#939393"
+                        android:backgroundTintMode="add"
+                        android:drawableTint="#b69a9a"
+                        android:elegantTextHeight="false"
+                        android:focusable="true"
+                        android:textColorHint="#ababab"
+                        android:layout_marginRight="50dp"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="start"
+                        android:hint="@string/domyslnie4"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#55da79"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Stan    "
+                        android:id="@+id/textView30"
+                        android:textColor="#999999" />
+
+                    <EditText
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText11_edycja"
+                        android:layout_weight="1"
+                        android:backgroundTint="#939393"
+                        android:backgroundTintMode="add"
+                        android:drawableTint="#b69a9a"
+                        android:elegantTextHeight="false"
+                        android:focusable="true"
+                        android:textColorHint="#ababab"
+                        android:layout_marginRight="50dp"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="start"
+                        android:hint="@string/domyslnie6"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#55da79"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Ilość    "
+                        android:id="@+id/textView31"
+                        android:textColor="#999999" />
+
+                    <EditText
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ilosc_Input_edycja"
+                        android:layout_weight="1"
+                        android:backgroundTint="#939393"
+                        android:backgroundTintMode="add"
+                        android:drawableTint="#b69a9a"
+                        android:elegantTextHeight="false"
+                        android:focusable="true"
+                        android:textColorHint="#ababab"
+                        android:layout_marginRight="50dp"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="start"
+                        android:hint="@string/domyslnie6"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#55da79"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Ilość zarej.:"
+                        android:id="@+id/textView32"
+                        android:textColor="#999999" />
+
+                    <EditText
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText13_edycja"
+                        android:layout_weight="1"
+                        android:backgroundTint="#939393"
+                        android:backgroundTintMode="add"
+                        android:drawableTint="#b69a9a"
+                        android:elegantTextHeight="false"
+                        android:focusable="true"
+                        android:textColorHint="#ababab"
+                        android:layout_marginRight="50dp"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="start"
+                        android:hint="@string/domyslnie6"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Skanuj"
+                        android:id="@+id/button"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="SKANUJ"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btnSave"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/btnDelete"
+                                android:layout_toRightOf="@+id/btnDelete"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_edytuj"
+                                android:onClick="addButtonClicked"
+                                android:src="@drawable/akceptuj2" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_centerHorizontal="true" />
+
+                            <ImageButton
+                                android:id="@+id/btnDelete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="bottom"
+                                android:layout_toLeftOf="@+id/view"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_usun"
+                                android:onClick="deleteButtonClicked"
+                                android:src="@drawable/zamknij" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.mkorpal.myapplication.Webtransfer_opcje"
+android:background="#eeeeee"
+android:weightSum="1">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Menu konfiguracji ustawień"
+    android:id="@+id/textView19"
+    android:textSize="28dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.44" />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adres IP :"
+        android:id="@+id/Kontakt"
+        android:textColor="#999999" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adresip"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+
+
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/adresip"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#55da79">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Serwis :"
+        android:id="@+id/textView17"
+        android:textColor="#999999" />
+
+    <EditText
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="1"
+        android:backgroundTint="#939393"
+        android:backgroundTintMode="add"
+        android:drawableTint="#b69a9a"
+        android:elegantTextHeight="false"
+        android:focusable="true"
+        android:textColorHint="#ababab"
+        android:layout_marginRight="100dp"
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:hint="@string/domyslnie"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal" />
+</LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uwierzytelnienie"
+            android:id="@+id/checkBox"
+            android:checked="false" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_display"
+        android:ellipsize="start"
+        android:enabled="false"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#55da79" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Login"
+            android:id="@+id/textView18"
+            android:textColor="#999999"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_weight="1"
+            android:backgroundTint="#939393"
+            android:backgroundTintMode="add"
+            android:drawableTint="#b69a9a"
+            android:elegantTextHeight="false"
+            android:focusable="true"
+            android:textColorHint="#ababab"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:hint="@string/defaultlogin"
+            android:singleLine="true"
+            android:inputType="text"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#55da79">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hasło"
+            android:id="@+id/textView2"
+            android:textColor="#999999"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_weight="1"
+            android:backgroundTint="#939393"
+            android:backgroundTintMode="add"
+            android:drawableTint="#b69a9a"
+            android:elegantTextHeight="false"
+            android:focusable="true"
+            android:textColorHint="#ababab"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:hint="@string/domyslnie3"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:password="false"
+            android:phoneNumber="false"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:text="testuj"
+        android:ellipsize="start"
+        android:enabled="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6d7d7"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton11"
+            android:layout_gravity="bottom"
+            android:src="@drawable/akceptuj2"
+            android:background="#585858"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton14"
+            android:layout_gravity="bottom"
+            android:src="@drawable/zamknij"
+            android:background="#585858"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

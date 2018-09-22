@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wydanie"
+                android:id="@+id/textView21"
+                android:background="#505050"
+                android:textColor="#ffffff"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_weight="1.02"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nazwa"
+                    android:id="@+id/textView2"
+                    android:background="#505050"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="3" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kod"
+                    android:id="@+id/textView3"
+                    android:background="#505050"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="3" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ilosc"
+                    android:id="@+id/textView4"
+                    android:background="#505050"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="DB1a"
+                    android:id="@+id/records"
+                    android:layout_column="0"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DB1b"
+                    android:id="@+id/kod"
+                    android:layout_column="1"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DB1c"
+                    android:id="@+id/ilosc"
+                    android:layout_column="2"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/back" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:text=" "
+                android:id="@+id/Kontakt"
+                android:background="#171717"
+                android:textColor="#ffffff"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d6d7d7">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/add_Button"
+                android:src="@drawable/akceptuj2"
+                android:background="#505050"
+                android:layout_weight="1"
+                android:onClick="addButtonClicked"/>
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/delete_Button"
+                android:src="@drawable/zamknij"
+                android:background="#505050"
+                android:layout_weight="1"
+                android:onClick="deleteButtonClicked"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

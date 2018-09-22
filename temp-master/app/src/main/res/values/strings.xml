@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ExpoCheck</string>
+
+    <string name="navigation_drawer_open">Otworz menu nawigacyjne</string>
+    <string name="navigation_drawer_close">Zamknij menu nawigacyjne</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_login">Zaloguj sie</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">haslo (optymalne)</string>
+    <string name="action_sign_in">Zaloguj lub zarejestruj</string>
+    <string name="action_sign_in_short">zaloguj się</string>
+    <string name="error_invalid_email">Ten email jest nieprawidłowy</string>
+    <string name="error_invalid_password">Hasło zbyt krótkie!</string>
+    <string name="error_incorrect_password">Niewłaściwe hasło!</string>
+    <string name="error_field_required">Te pole nie może być puste!</string>
+    <string name="permission_rationale">"Pozwolenie kontaktów jest wymagane."
+    </string>
+
+    <string name="defaultlogin">Login :</string>
+    <string name="lblPassword">Podaj hasło :</string>
+    <string name="btn_submit">Zatwierdz</string>
+    <string name="domyslnie">webtransfer</string>
+    <string name="domyslnie2">Uzupupełnij</string>
+    <string name="domyslnie3">******</string>
+    <string name="domyslnie4">nie wykryto</string>
+    <string name="domyslnie5">nie wykryto</string>
+    <string name="domyslnie6">0</string>
+    <string name="adresip">192.168.1</string>
+    <string name="uwierzytelnienie">uwierzytylnienie</string>
+    <string name="btn_display">zatwierdz</string>
+    <string name="emptyString" />
+    <string name="sklep">Nazwa sklepu</string>
+
+    <string-array name="pracownicy">
+        <item>Jan Kowalski</item>
+        <item>Ewa Znana</item>
+        <item>Ziemowit Podhalański</item>
+        <item>Krzysztof Krawatczyk</item>
+        <item>Lucjusz Zimny</item>
+    </string-array>
+
+    <string-array name="format">
+        <item>A4</item>
+        <item>A5</item>
+        <item>B5</item>
+        <item>B4</item>
+        <item>H</item>
+        <item>C</item>
+    </string-array>
+</resources>
